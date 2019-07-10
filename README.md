@@ -8,4 +8,5 @@ Upload the .zip file when you create a Lambda. Attach this Lambda to the origin 
 
 ## Issues
 + I keep having issues with access key errors. I nuked my project early on, redownloaded IntelliJ, regenerated new access / secret keys multiple times; and it worked after a couple renewals. I am still unsure why this occurred.
+  + Found out the root of the problem. Amazon was rotating keys at this time, which is why my stuff didn't work. Others could not create new IAM users, and keys did not work. 
 + Access to second bucket: I hate that I had to make the whole thing public, or manually make each image public. There must be a better way.
